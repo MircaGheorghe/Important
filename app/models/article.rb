@@ -9,14 +9,15 @@
 #  updated_at :datetime         not null
 #
 class Article < ApplicationRecord
-    has_many(
+  has_many(
     :comments,
     dependent: :destroy
-    )
+  )
 
-    validates(
+  validates(
     :title,
     :text,
     presence: true
-    )
+  )
+
 end
