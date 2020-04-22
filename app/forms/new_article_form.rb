@@ -1,15 +1,15 @@
 class NewArticleForm
   include ActiveModel::Model
 
-    attr_accessor(
-        :title,
-        :text
-    )
+  attr_accessor(
+    :title,
+    :text
+  )
 
-    validates (
-        :title,
-        :text,
-        presence: true
-    )
+  validates (
+    :title,
+    :text,
+    presence: true
+  )
 
 end
